@@ -12,7 +12,7 @@ const readFile = (fileNameAsString, colorAsString) => {
     .then(() => {
 
       // isolate color matches
-      splitTxt.map(element => {
+      splitTxt.map(element => { // .filter(0 is a more direct way of doing this, returns new array)
         if (element.includes("Color:" + colorAsString)) {
           colorArray.push(element)
         }
@@ -27,23 +27,21 @@ const readFile = (fileNameAsString, colorAsString) => {
       })
 
       // create a numbered list on the DOM
-      let list = document.createElement('ol')
+      let list = document.getElementById('names')
 
       // loop through the names, create a numbered list item for each of the names
       colorSortedNamesArray.forEach(element => {
-        var li = document.createElement('li');
+        let li = document.createElement('li');
         li.textContent = element;
         list.appendChild(li);
       })
 
       // creates an h3 in the DOM for the color searched
-      let listName = document.getElementById('listColor')
       let colorAsCaps = colorAsString.toUpperCase()
-      listName.innerHTML = colorAsCaps
+      document.getElementById('listColor').innerHTML = colorAsCaps
 
-      // adds the list items to the DOM
-      let app = document.getElementById('names')
-      app.appendChild(list)
+      // adds the list items to the list in the DOM
+      // document.getElementById('names').appendChild(list)
     })
 }
 
