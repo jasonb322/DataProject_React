@@ -5,7 +5,11 @@ import NameGrid from "./components/NameGrid";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="topSpan">
+        <Header />
+        <a href="https://www.google.com">Link</a>
+      </div>
+      
       <Selector />
       <NameGrid />
       
