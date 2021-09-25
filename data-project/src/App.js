@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Selector from "./components/Selector";
-import NameGrid from "./components/NameGrid";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       </div>
       
       <Selector />
-      <NameGrid />
+      
       
     </div>
   );

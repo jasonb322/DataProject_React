@@ -1,16 +1,20 @@
 import React from 'react'
+import TableData from './TableData';
 
 export const Selector = () => {
-    const colorSelection = () => {
-        // this needs to be updated, but it works
-        console.log("Selector Changed")
+    let selectedColor = "none"
+
+    function handleChange(e) {
+        console.log("Before: " + selectedColor)
+        selectedColor = e.target.value
+        console.log("After: " + selectedColor)
     }
 
     return (
         <div>
-            <label for="colorChoice">Select Client Grouping: </label>
+            <label htmlFor="colorChoice">Select Client Grouping: </label>
 
-            <select name="colorChoice" id="colors" onChange={colorSelection}>
+            <select className="colorChoice" onChange={handleChange}>
                 <option value="">None</option>
                 <option value="red">Red</option>
                 <option value="orange">Orange</option>
@@ -20,7 +24,11 @@ export const Selector = () => {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+            
+            <TableData  color={selectedColor}/>
         </div>
+
+       
     )
 }
 
