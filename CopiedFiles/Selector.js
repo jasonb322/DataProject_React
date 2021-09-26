@@ -1,22 +1,19 @@
 import React from 'react'
-import DisplayData from './DisplayData';
-import processDataFile from './processData';
-import { useState } from 'react'
+import TableData from './TableData';
 
-const Selector = () => {
-    const [selectedColor, setSelectedColor] = useState('PICK A COLOR')
-    const [displayDataArray, setDisplayDataArray] = useState([])
+export const Selector = () => {
+    let selectedColor = "none"
 
-    const handleChange = (e) => {
-        setSelectedColor(e.target.value)
-        console.log(selectedColor)
-        setDisplayDataArray(processDataFile(selectedColor))
-        console.log(displayDataArray)
+    function handleChange(e) {
+        console.log("Before: " + selectedColor)
+        selectedColor = e.target.value
+        console.log("After: " + selectedColor)
     }
 
     return (
         <div>
             <label htmlFor="colorChoice">Select Client Grouping: </label>
+
             <select className="colorChoice" onChange={ handleChange }>
                 <option value="">None</option>
                 <option value="red">Red</option>
@@ -27,9 +24,11 @@ const Selector = () => {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
-
-            <DisplayData data={ displayDataArray } color={ selectedColor }/>
+            
+            <TableData />
         </div>
+
+       
     )
 }
 
