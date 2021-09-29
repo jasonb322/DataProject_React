@@ -1,23 +1,32 @@
 import React from 'react'
-import DisplayData from './DisplayData';
-import processDataFile from './processData';
-import { useState } from 'react'
+import NamesList from './NamesList';
+import { useState, useEffect } from 'react'
 
 const Selector = () => {
-    const [selectedColor, setSelectedColor] = useState('PICK A COLOR')
-    const [displayDataArray, setDisplayDataArray] = useState([])
+    const [color, setColor] = useState('')
+    const [names, setNames] = useState([])
 
     const handleChange = (e) => {
-        setSelectedColor(e.target.value)
-        console.log(selectedColor)
-        setDisplayDataArray(processDataFile(selectedColor))
-        console.log(displayDataArray)
+        setColor(e.target.value)
     }
+
+    useEffect(() => {
+        fetch('./dataFile.txt')
+        .then(res => res.text())
+        .then(txt => txt.split("\n\n"))
+        .then(splitText => splitText.filter(element => element.includes('Color:' + color)).sort())
+        .then(result => result.map(
+            element => element.substring(element.indexOf('Name:') + 5, element.indexOf('Company:') - 1)
+        ))
+        .then(names => setNames(names))
+        .catch(err => console.log("Error: " + err))
+    }, [color])
 
     return (
         <div>
-            <label htmlFor="colorChoice">Select Client Grouping: </label>
-            <select className="colorChoice" onChange={ handleChange }>
+            <label htmlFor="colorChoice"><b>Select Color Team: </b></label>
+            <select className="colorChoice" onChange={handleChange}>
+
                 <option value="">None</option>
                 <option value="red">Red</option>
                 <option value="orange">Orange</option>
@@ -28,7 +37,10 @@ const Selector = () => {
                 <option value="violet">Violet</option>
             </select>
 
-            <DisplayData data={ displayDataArray } color={ selectedColor }/>
+            <h3 id="listColor">{color === '' ? "NO GROUPS FILTERED" : color.toUpperCase() + " GROUP"}</h3>
+
+            {names && <NamesList names={names} color={color}/>}
+
         </div>
     )
 }
