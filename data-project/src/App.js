@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="topSpan">
         <Header />
-        <a href="https://www.google.com">I'd rather be surfing!</a>
+        <a className="link" href="https://www.google.com">I'd rather be surfing!</a>
       </div>
       
       <Selector />

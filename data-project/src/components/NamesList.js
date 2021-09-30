@@ -4,11 +4,11 @@
 
 import NameCard from "./NameCard"
 
-const NamesList = ({ names }) => {
+const NamesList = ({ names, color }) => {
 
     return (
         <div className="names-list">
-            {names.map((name, idx) => <NameCard key={idx} name={name} />)}
+            {names.map((name, idx) => <NameCard key={idx} name={name} color={color} />)}
         </div>
     )
 }

@@ -24,7 +24,7 @@ const Selector = () => {
 
     return (
         <div>
-            <label htmlFor="colorChoice"><b>Select Color Team: </b></label>
+            <label htmlFor="colorChoice"><b>Select Team Color: </b></label>
             <select className="colorChoice" onChange={handleChange}>
 
                 <option value="">None</option>
@@ -37,7 +37,7 @@ const Selector = () => {
                 <option value="violet">Violet</option>
             </select>
 
-            <h3 id="listColor">{color === '' ? "NO GROUPS FILTERED" : color.toUpperCase() + " GROUP"}</h3>
+            <h3 id="listColor">{color === '' ? "NO TEAM SELECTED" : color.toUpperCase() + " TEAM"}</h3>
 
             {names && <NamesList names={names} color={color}/>}
 
