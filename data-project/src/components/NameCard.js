@@ -13,12 +13,12 @@ const NameCard = ({ name, color }) => {
                 break;
 
             case 'orange':
-                setTxtColor('#E65410')
-                setBGColor('#F5DEB3')
+                setTxtColor('#B86800')
+                setBGColor('#FFCB87')
                 break;
 
             case 'yellow':
-                setBGColor('#FAFAD2')
+                setBGColor('#FFF8BA')
                 setTxtColor('#DAA520')
                 break;
 

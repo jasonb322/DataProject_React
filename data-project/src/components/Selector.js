@@ -37,7 +37,7 @@ const Selector = () => {
                 <option value="violet">Violet</option>
             </select>
 
-            <h3 id="listColor">{color === '' ? "NO TEAM SELECTED" : color.toUpperCase() + " TEAM"}</h3>
+            <h3 style={ color === 'yellow' ? {color: 'darkgoldenrod'} : {color: color }} id="listColor">{color === '' ? "NO TEAM SELECTED" : color.toUpperCase() + " TEAM"}</h3>
 
             {names && <NamesList names={names} color={color}/>}
 
