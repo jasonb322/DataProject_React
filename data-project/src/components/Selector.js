@@ -18,7 +18,7 @@ const Selector = () => {
         .then(result => result.map(
             element => element.substring(element.indexOf('Name:') + 5, element.indexOf('Company:') - 1)
         ))
-        .then(names => setNames(names))
+        .then(names => setNames(names.sort()))
         .catch(err => console.log("Error: " + err))
     }, [color])
 

@@ -59,8 +59,6 @@ const NameCard = ({ name, color }) => {
             <div className='name' style={{ backgroundColor: bgColor, color: txtColor }}>{name}</div>
         </div>
     )
-
-
-
+    
 }
 export default NameCard
