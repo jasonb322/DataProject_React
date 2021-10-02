@@ -1,13 +1,15 @@
 import React from 'react'
-import Header from "./components/Header";
-import Selector from "./components/Selector";
+import Header from "./Header";
+import Selector from "./Selector";
+import './home.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
         <div className="home">
             <div className="topSpan">
                 <Header />
-                <a className="link" href="https://www.google.com">I'd rather be surfing!</a>
+                <Link className="link" to='./TideWatch'>I'd rather be surfing!</Link>
             </div>
             <Selector />
         </div>

@@ -1,4 +1,6 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+.tide-watch, body {
   color: white;
   border-width: 3px;
   border-radius: 5px;
@@ -7,17 +9,11 @@
   text-align: center;
   text-transform: lowercase;
   display: grid;
-  /* grid-template-columns: 30% 40% 30%;
-  grid-gap: 1em;
-  background-color: #eee; */
-}
-
-h4 {
-  margin: 3px;
-}
-
-body {
   background-color: #1a1a1a;
+}
+
+.tide-watch, h4 {
+  margin: 3px;
 }
 
 .location p {

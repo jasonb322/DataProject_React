@@ -1,16 +1,23 @@
 import Home from "./components/Home";
+import TideWatch from "./components/Tide-WatchFiles/TideWatch";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <div className="App">
+
         <Switch>
-          <Route path="/">
+
+          <Route exact path="/">
             <Home />
           </Route>
-        </Switch>
 
+          <Route path="/tideWatch">
+            <TideWatch />
+          </Route>
+
+        </Switch>
 
       </div>
     </Router>
