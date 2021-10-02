@@ -36,7 +36,7 @@ const Temps = () => {
     <div className='temps'>
       <br />
       <h4>Water: {waterTemp} ˚F</h4 >
-      <h4>Air: {airTemp} ˚F</h4 >
+      <h4 className='air-temp'>Air: {airTemp} ˚F</h4 >
     </div>
   )
 }

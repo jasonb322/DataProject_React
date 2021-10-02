@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+import styled from 'styled-components'
 
-.home body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  
-}
+export const HomeDiv = styled.div`
 
 .link {
   font-weight: 400;
+  text-transform: uppercase;
+  text-decoration-line: none;
 }
 
 .colorChoice {
@@ -62,4 +57,4 @@ h2, h3 {
   text-align: center;
   /* background-color:lightsteelblue */
 }
-
+`;

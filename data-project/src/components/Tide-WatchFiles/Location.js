@@ -25,11 +25,14 @@ const Location = () => {
 
   return (
     <div className='location'>
-      <h2>{name}</h2>
-      <h3>Tides and Temps</h3>
-      <p>Lat: {lat}</p>
-      <p>Long: {long}</p>
-      <p>NOAA Station Id: {location}</p>
+      <h1>{name}</h1>
+      <h2>Tides and Temps</h2>
+      <div className='locationStats'>
+        <h4>Lat: {lat}</h4>
+        <h4>Long: {long}</h4>
+        <h4>NOAA Station Id: {location}</h4>
+      </div>
+      
     </div>
   )
 }
