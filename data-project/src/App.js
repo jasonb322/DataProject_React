@@ -1,18 +1,20 @@
-import Header from "./components/Header";
-import Selector from "./components/Selector";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <div className="topSpan">
-        <Header />
-        <a className="link" href="https://www.google.com">I'd rather be surfing!</a>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+
       </div>
-      
-      <Selector />
-      
-      
-    </div>
+    </Router>
+
   );
 }
 
