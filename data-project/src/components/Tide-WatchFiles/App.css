@@ -1,0 +1,28 @@
+.App {
+  color: white;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: white;
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+  text-transform: lowercase;
+  display: grid;
+  /* grid-template-columns: 30% 40% 30%;
+  grid-gap: 1em;
+  background-color: #eee; */
+}
+
+h4 {
+  margin: 3px;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.location p {
+  margin: 0;
+}
+
+
+
