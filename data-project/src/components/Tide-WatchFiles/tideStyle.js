@@ -12,14 +12,12 @@ export const TideDiv = styled.div`
 .tideBody {
   font-family: 'Major Mono Display', monospace;
   border-style: solid;
-  /* border-color: #5386A6; */
   border-width: 5px;
   border-radius: 1em;
-  margin: 10px;
+  margin: 20px auto;
   padding: 0px 10px 20px 10px;
   text-transform: lowercase;
-  /* background-color: #B4CBD9; */
-  /* color: #5386A6; */
+  max-width: 380px;
 }
 
 .locationStats h4 {

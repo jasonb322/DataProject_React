@@ -11,5 +11,6 @@ body {
 
 .link {
   text-decoration-line: none;
+  font-weight: bold;
 }
 
