@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DataProject_React/static/css/main.9d9653fa.chunk.css",
+    "main.js": "/DataProject_React/static/js/main.9bf1f0a7.chunk.js",
+    "main.js.map": "/DataProject_React/static/js/main.9bf1f0a7.chunk.js.map",
+    "runtime-main.js": "/DataProject_React/static/js/runtime-main.b9ab2beb.js",
+    "runtime-main.js.map": "/DataProject_React/static/js/runtime-main.b9ab2beb.js.map",
+    "static/js/2.fdcd192f.chunk.js": "/DataProject_React/static/js/2.fdcd192f.chunk.js",
+    "static/js/2.fdcd192f.chunk.js.map": "/DataProject_React/static/js/2.fdcd192f.chunk.js.map",
+    "index.html": "/DataProject_React/index.html",
+    "static/css/main.9d9653fa.chunk.css.map": "/DataProject_React/static/css/main.9d9653fa.chunk.css.map",
+    "static/js/2.fdcd192f.chunk.js.LICENSE.txt": "/DataProject_React/static/js/2.fdcd192f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9ab2beb.js",
+    "static/js/2.fdcd192f.chunk.js",
+    "static/css/main.9d9653fa.chunk.css",
+    "static/js/main.9bf1f0a7.chunk.js"
+  ]
+}
