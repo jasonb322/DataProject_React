@@ -10,7 +10,8 @@ body {
 }
 
 .link {
-  text-decoration-line: none;
+  /* text-decoration-line: none; */
   font-weight: bold;
+  color: #314763;
 }
 

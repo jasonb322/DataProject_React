@@ -18,6 +18,8 @@ export const TideDiv = styled.div`
   padding: 0px 10px 20px 10px;
   text-transform: lowercase;
   max-width: 380px;
+  background-color: #b3d5ff;
+  color: #314763;
 }
 
 .locationStats h4 {

@@ -5,7 +5,6 @@ export const HomeDiv = styled.div`
 .link {
   font-weight: 400;
   text-transform: uppercase;
-  text-decoration-line: none;
 }
 
 .colorChoice {
