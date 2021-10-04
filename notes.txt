@@ -1,0 +1,8 @@
+Use the repo version of this project as it seems to be working the best out of all of them.
+
+At this point I want to overwrite what is currently online with the version that is on my machine right now.
+I think I need to watch the videos a little more, but it seems like I can do so. It is probably worth the 
+one hour investment to see how exactly this is done before I fuck the pooch again and spend an entire day
+sorting it out.
+
+Good news though. Everytime you fuck something up in code, you learn. You learned a shit ton today, but it sucked!!
