@@ -10,7 +10,7 @@ function App() {
 
         <Switch>
 
-          <Route exact path="/">
+          <Route eact path='/' component={ {path === '/' ? component={Home} : compoenent={Home} }>
             <Home />
           </Route>
 
